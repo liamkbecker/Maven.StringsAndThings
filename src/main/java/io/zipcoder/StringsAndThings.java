@@ -38,11 +38,13 @@ public class StringsAndThings {
      */
     public String removeString(String base, String remove){
         String returnString = "";
-        for(int i = 0; i < base.length(); i++){
-            if(base.charAt(i) != remove.charAt(0)){
-                returnString = returnString + base.charAt(i);
+
+        for(int i = 0; i < base.length() - remove.length(); i++){
+            if(base.substring(i, i+remove.length()).equals(remove)){
+                
             }
         }
+
         return returnString;
     }
 
